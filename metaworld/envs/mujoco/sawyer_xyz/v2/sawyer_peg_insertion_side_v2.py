@@ -57,10 +57,6 @@ class SawyerPegInsertionSideEnvV2(SawyerXYZEnv):
             goal_high = (-0.25, 0.7, 0.001)
         else:
             raise NotImplementedError
-        
-        cprint('obj_low: {}, obj_high: {}'.format(obj_low, obj_high), 'cyan')
-        cprint('goal_low: {}, goal_high: {}'.format(goal_low, goal_high), 'cyan')
-        
 
         super().__init__(
             self.model_name,
